@@ -1,0 +1,120 @@
+table {
+  width: 100%;
+  padding: 10px;
+  max-width: 100%;
+  margin-bottom: 10px;
+  border-bottom: 1px solid lightblue;
+  border-spacing: inherit;
+}
+tr {
+  text-align: left;
+}
+
+table > tbody > tr > td,
+table > tbody > tr > th,
+table > tfoot > tr > td,
+table > tfoot > tr > th,
+table > thead > tr > td,
+table > thead > tr > th {
+  padding: 2px 5px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+tr:hover {
+  background-color: #ecf8fd;
+}
+tr:nth-child(even) {background-color: #fbfbfb;}
+tr:nth-child(even):hover {background-color: #ecf8fd;}
+
+.page_size {
+  float: left;
+  margin: 3px 15px;
+}
+.search_field {
+  float: left;
+  margin: 3px 15px;
+}
+select {
+  padding: 4px 12px;
+  border-radius: 7px;
+  margin: 3px 30px;
+  height: 30px;
+}
+select:focus{
+  border: 2px solid #29b2ea;
+}
+input {
+  padding: 6px 12px;
+  border-radius: 7px;
+  margin: 3px 30px;
+  border-width: 1px;
+}
+.pagination {
+  float: right;
+}
+.total_record{
+  float: right;
+  padding: 10px 10px;
+}
+
+.pagination_ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+  margin: 3px 15px;
+}
+
+.pagination_ul li {
+  /* padding: 6px 12px; */
+  padding: 7px 12px 2px 12px;
+  border-radius: 7px;
+  cursor: pointer;
+  display: list-item;
+  margin: 3px 4px;
+  height: 20px;
+}
+.pagination_ul li:hover {
+  box-shadow: 0px 2px 6px 0px #a7a4a4;
+}
+.pagination_ul li.border_none {
+  border: none;
+}
+.pagination_ul li.disabled {
+  cursor: not-allowed;
+}
+
+.pagination_ul li.disabled {
+  cursor: not-allowed;
+}
+.pagination_ul li.active {
+  background-color: #29b2ea;
+  color: white;
+}
+
+table thead .sorting {
+  background-image: url(/img/icons-sort-100.png);
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: 15px 16px;
+}
+table thead .sort-up {
+  background-image: url(/img/icons-up-arrow-100.png);
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: 15px 16px;
+}
+table thead .sort-down {
+  background-image: url(/img/icons-down-arrow-100.png);
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: 15px 16px;
+}
